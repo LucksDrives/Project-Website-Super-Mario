@@ -170,8 +170,9 @@ button{
 	margin: 0;
 }
 @media (max-width: 999px){
-.NoMobile{
-	display: none;
+	.NoMobile{
+		display: none;
+	}
 }
 .PH {
 	padding: 1%;
