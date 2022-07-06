@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="formatação/script.js"> </script>
+	<script>
+		//Chamar Função ao Executar Ação Scroll
+		window.onscroll = function() {
+			scroll();
+		}
+		//Exibit Botão Ao Rolar Scroll
+		function scroll(){
+			var btn = document.getElementById("back-to-top");
+			if(document.documentElement.scrollTop > 100){
+				btn.style.display = "block";
+			}else{
+				btn.style.display = "none";
+			}
+		}
+		//Subir ao Topo
+		function backToTop(){
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<link href="formatação/formatacao_Inicial.css" type= "text/CSS" rel="stylesheet" />
+	<meta charset="utf-8">
+	<title> Super Mario </title>
+</head>
+
+<body>
+	<header>
+		<img class="cabecalho" src="imagens/cabecalho/cabecalho.gif">
+		<nav style="text-align:center">
+		<ul class="li">
+			<li> <a href="inicio.html">Inicio</a></li>
+			<li> <a href="Historia.html">História</a></li>
+			<li> <a href="Novidades.html">Novidades</a></li>
+			<li> <a href="Videos.html">Videos</a></li>
+			<li> <a href="Jogos.html">Jogos</a></li>
+		</nav>
+	</header>
+
+<main>
+	<button onclick="backToTop()" id="back-to-top"><img src="Imagens/Icons/Subir.png" alt="Topo"/></button>
+	<h1 style="padding-bottom: 10px">Jogos do Mario</h1>
+		<p class="DescricaoJogos">Aqui tem-se disposto uma pequena coletânea de jogos do super mario. Voce pode aproveitar e se divertir o quanto quiser, ao lado você pode conferir uma pequena descrição dos jogos, aperte o botão ao lado do título do jogo para poder verificar as teclas a serem usadas nos jogos. Os jogos do Mario apareceram pela primeira vez em 1985 através dos jogos de fliperama, Desde então, ele se popularizou mundialmente e conquistou espaço em diversos consoles diferentes. Inclusive, no mundo online. 
+		Tudo isso fez com que o Mario se tornasse uma grande franquia, servindo de inspiração para filmes, desenhos animados e ilustrações. O personagem é representado pela figura de um encanador italiano que vive nos EUA. 
+		Hoje, existem diversos jogos do Mario, que leva seus jogadores para viverem uma série de aventuras com ele. </p>
+	<img class="ImgGames" src="imagens/Jogos/planta.png">
+	
+	<h2 class="SPG">Super Mario Endles World&nbsp <button onclick="Botao('bt_1','pe_1')" id="bt_1" class="game"><strong>→&nbsp</strong></button></h2>	
+		<iframe class="Mario_game" src="https://www.retrogames.cc/embed/41854-super-mario-endless-world-demo-by-haithius.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+		<p class="PGG">Neste game reviva a grande, épica, incrivel batalha contra bowser, o grande vilão da franquia Super Mario, e tenha a sensação de derrotalo novamente como em sua infância! O Rei Bowser Koopa, conhecido no Japão como Koopa, ou somente Bowser, é o principal vilão do universo Mario, consagrada franquia da Nintendo, e também um dos mais famosos vilões da empresa.</p>
+		<p id="pe_1" class="PE"><img style="text-align: center" src="Imagens/Jogos/Comandos.png"/></p> 
+
+	<h2 class="SPG">Luigi in Sonic&nbsp <button onclick="Botao('bt_2','pe_2')" id="bt_2" class="game"><strong>→&nbsp</strong></button></h2>
+		<iframe class="Mario_game" src="https://www.retrogames.cc/embed/42452-luigi-in-sonic-1.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+		<p class="PGG">Neste game incorpore o Mario, para os conhecidos Luiji o Soziar com outras roupas do Super Mario, e divirta-se encarando desafios e muitos inimigos, com boses e diversas experiencias unicas! Luigi é um personagem fictício de videogames produzido pela Nintendo. Criado pelo designer de jogos Shigeru Miyamoto, Luigi é irmão do Mario que é mascote da série, ele é o seu companheiro em vários jogos. A primeira aparição de Luigi se deu no jogo Mario Bros. em 1983, como personagem controlado pelo segundo jogador.</p>
+		<p id="pe_2" class="PE"><img style="text-align: center" src="Imagens/Jogos/Comandos.png"/></p> 
+
+	<h2 class="SPG">Mario Kopas Revenge&nbsp <button onclick="Botao('bt_3','pe_3')" id="bt_3" class="game"><strong>→&nbsp</strong></button></h2>
+		<iframe class="Mario_game" src="https://www.retrogames.cc/embed/42164-yoshi-in-sonic-2.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+		<p class="PGG">Neste game Brinque com as Kopas tartarugas filhotes do grande bowser e encarre os desafios que o jogo lhe propõe, mas cuidado ele não é um jogo simples e promete muitos desafios boa sorte contra essas temidas tartarugas! O Rei Bowser Koopa, conhecido no Japão como Koopa, ou somente Bowser, é o principal vilão do universo Mario, consagrada franquia da Nintendo, e também um dos mais famosos vilões da empresa.</p>
+		<p id="pe_3" class="PE"><img style="text-align: center" src="Imagens/Jogos/Comandos.png"/></p> 
+
+
+	<h2 class="SPG">Yoshi in Sonic&nbsp <button onclick="Botao('bt_4','pe_4')" id="bt_4" class="game"><strong>→&nbsp</strong></button></h2>
+		<iframe class="Mario_game" src="https://www.retrogames.cc/embed/42164-yoshi-in-sonic-2.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+		<p class="PGG">Neste game Jogue a dois encarando desafios em dobro com diversão em dobro, com marios personalizados, exclusivamente desenvolvidos para a arte conceitual do jogo, você será capaz de encarar essa jornada com seu amigo e finalizar essa obra? Super Mario Bros. é um jogo eletrônico lançado pela Nintendo em 1985. Considerado um clássico, "Super Mario Bros." foi um dos primeiros jogos de plataforma com rolagem lateral, recurso conhecido em inglês como side-scrolling.</p>
+		<p id="pe_4" class="PE"><img style="text-align: center" src="Imagens/Jogos/Comandos.png"/></p> 
+</main>
+
+	<footer>
+	<img class="chao" src="imagens/rodape/chao.gif" style="width: 100%; height: 80px; border-radius: 0">
+		<address>
+			<p class= "SP"><strong> Super Mario</strong> </p>
+			<p class= "SP2"> <img src="Imagens/Icons/endereco.png" style="width: 30px"/><strong>Endereço:</strong>BR-470, Km 172, 6.500 | Bairro Sapopema | Veranópolis/RS</p>
+			<img class= "gif" src="imagens/rodape/Gif_Mario.gif">
+			<p class= "SP3"> <img src="Imagens/Icons/email.png" style="width: 30px"/><strong>Email: <a class="EML" href=mailto:"contato@papermario.com"> contato@papermario.com</a>
+			<p class= "cadastro"<strong>Efetue um Cadastro no Site:</strong></p>
+			<p class= "PB"><button class="button" type="button"><a href="Formulário.html">CADASTRAR</button></p>
+			<audio controls loop autoplay>
+				<source src="Sons/Super Mario World" type="audio/ogg"/>
+				<source src="Sons/Super Mario World.mp3" type="audio/mpeg"/>
+			</audio>
+		</address>
+	</footer>
+</body>
+
+</html>

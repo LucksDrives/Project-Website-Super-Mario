@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="formatação/script3.js"> </script>
+	<script>
+		//Chamar Função ao Executar Ação Scroll
+		window.onscroll = function() {
+			scroll();
+		}
+		//Exibit Botão Ao Rolar Scroll
+		function scroll(){
+			var btn = document.getElementById("back-to-top");
+			if(document.documentElement.scrollTop > 100){
+				btn.style.display = "block";
+			}else{
+				btn.style.display = "none";
+			}
+		}
+		//Subir ao Topo
+		function backToTop(){
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<link href="formatação/formatacao_Inicial.css" type= "text/CSS" rel="stylesheet" />
+	<meta charset="utf-8">
+	<title> Super Mario </title>
+</head>
+
+<body>
+	<header>
+		<img class="cabecalho" src="imagens/cabecalho/cabecalho.gif">
+		<nav style="text-align:center">
+		<ul class="li">
+			<li> <a href="inicio.html">Inicio</a></li>
+			<li> <a href="Historia.html">História</a></li>
+			<li> <a href="Novidades.html">Novidades</a></li>
+			<li> <a href="Videos.html">Videos</a></li>
+			<li> <a href="Jogos.html">Jogos</a></li>
+		</nav>
+	</header>
+
+	<main>
+	<button onclick="backToTop()" id="back-to-top"><img src="Imagens/Icons/Subir.png" alt="Topo"/></button>
+		<h1 strong>Vídeos do Super Mario</h1>
+		<img class="ImgVideos" src="Imagens/Videos/ImgVideos.png"/>		
+			<h2>Super Mario 64 (1996)</h2>
+				<p class="VideoP">O Super Mario 64 foi lançado com o console Nintendo 64 e foi considerado por muitos especialistas o melhor game de todos os tempos. Pela primeira vez, o Mario recebeu uma aventura totalmente em 3 dimensões com gráficos fantásticos para a época. O jogo é muito divertido, tem muitos segredos e garante muitas horas de diversão.</p>
+				<video src="Videos/mario 64.mp4" controls class="video"></video>
+
+			<br />	
+
+			<h2>Super Mario Bros. (1985)</h2>
+				<p class="VideoP">O Super Mario Bros. é o primeiro jogo do Mario que surgiu no console NES (Nintendinho). O jogo vendeu milhões de cópias e se tornou uma lenda na história dos videogames. Foi o primeiro jogo de plataforma que ainda hoje é adorado por todo mundo por ser super divertido e simples.</p>
+				<video src="Videos/super mario bros.mp4" controls class="video"></video>
+
+			<br />	
+	
+			<h2>Super Mario World (1990)</h2>
+				<p class="VideoP">Depois do grande sucesso do Super Mario Bros, o Mario surge no console Super Nintendo em mais um game incrível. Desta vez, o Mario vem acompanhado do seu amigo Yoshi e, juntos, eles partem em uma aventura para salvar a Princesa Peach que foi (mais uma vez) raptada pelo vilão Bowser.</p>
+				<video src="Videos/super mario world.mp4" controls class="video"></video>
+	
+			<br />		
+	
+			<h2>Super Mario Bros. 3 (1988)</h2>
+				<p class="VideoP">Este é o terceiro e último título do Super Mario do console NES. O Mario vai em busca da Princesa Peach no Reino dos Cogumelos, encarando inimigos mais perigosos. Mas, desta vez, o encanador conta com novos poderes especiais. Este é um game muito completo em que o jogador pode escolher o seu caminho no mapa.</p>
+				<video src="Videos/super mario bros 3.mp4" controls class="video"></video>
+
+			<br />	
+	
+			<h2>Super Mario Bros. 2 (1986)</h2>
+				<p class="VideoP">O Super Mario Bros. 2 é totalmente diferente da primeira e da terceira versões do jogo do console NES. Aqui, o Mario não derrota os inimigos pulando em cima deles, mas atirando vegetais. Além disso, é possível jogar com outras personagens como Luigi, Princesa Peach e Toad.</p>
+				<video src="Videos/super mario bros 2.mp4" controls class="video"></video>
+
+			<br />	
+
+			<h2>Super Mario RPG (1996)</h2>
+				<p class="VideoP">Mario RPG é uma versão totalmente diferente das clássicas plataformas que estamos acostumados. Neste jogo, o Mario enfrenta os seus inimigos em combates por turnos, como acontece nos games RPG's. Este game foi lançado no Super Nintendo e é uma experiência bem original em um jogo do Super Mario.</p>
+				<video src="Videos/super mario rpg.mp4" controls class="video"></video>
+
+			<br />	
+	
+			<h2>Super Mario World 2 (1995)</h2>
+				<p class="VideoP">O Yoshi é o protagonista principal do segundo game do Super Mario World do Super Nintendo. Use as habilidades do Yoshi para transportar o Mario nas fases com plataformas cheias de inimigos e obstáculos perigosos. O jogo recebeu muitos elogios pelo seu grafismo original, como se tudo fosse pintado à mão.</p>
+				<video src="Videos/super mario world 2.mp4" controls class="video"></video>
+
+			<br />	
+	
+			<h2>Super Mario Kart (1992)</h2>
+				<p class="VideoP">O Super Nintendo surpreendeu a todos quando lançou este super game de carros. Aqui, a turma do Mario se enfrenta em corridas de karts em cenários do Super Mario World. Vale tudo para vencer. Você pode pegar itens para usar contra os seus rivais ou usar atalhos para ultrapassá-los.</p>
+				<video src="Videos/super mario kart.mp4" controls class="video"></video>
+
+			<br />	
+	
+			<h2>Paper Mario (2001)</h2>
+				<p class="VideoP">O mundo do Mario se transformou em um lugar onde tudo é feito de papel. Explore esse novo mundo e fale com várias personagens para saber onde foi parar a Princesa Peach. O Mario vai encontrar muitos amigos que vão ajudá-lo a completar essa aventura do Nintendo 64.</p>
+				<video src="Videos/paper mario.mp4" controls class="video"></video>
+
+			<br />	
+	
+			<h2>Mario Kart 64 (1996)</h2>
+				<p class="VideoP">O Mario Kart regressou ao Nintendo 64 com gráficos em 3 dimensões. Você pode escolher uma personagem do universo Mario para entrar em corridas super intensas, mas muito divertidas. Pegue os itens como as bananas e os cogumelos para usar contra os seus oponentes e ganhar vantagem.</p>
+				<video src="Videos/mario kart 64.mp4" controls class="video"></video>
+
+			<br />	
+	
+			<h2>Super Mario Maker (2015)</h2>
+				<p class="VideoP">Neste editor do Mario você pode construir as fases e depois jogar. Já imaginou criar a fase mais difícil de sempre? Coloque os inimigos, as plataformas e outros itens onde quiser para montar tudo do seu jeito. Use a sua imaginação para fazer fases radicais.</p>
+				<video src="Videos/mario maker.mp4" controls class="video"></video>
+
+			<br />	
+	
+			<h2>Super Mario All-Stars (1993)</h2>
+				<p class="VideoP">Os jogos do Super Mario no NES foram tão populares que voltaram a sair no Super Nintendo. Neste game, você pode jogar o raríssimo Super Mario The Lost Levels (Super Mario Bros. 2 na versão japonesa). Também tem o Super Mario Bros. 2 na versão americana, o Super Mario Bros. 1 e 3 e o Super Mario World do Super Nintendo. </p>
+				<video src="Videos/super mario all stars.mp4" controls class="video"></video>
+
+			<br />	
+
+			<p class="PLV"> <button onclick="Botao('bt_1','pe_1')" id="bt_1" class="Novid"><strong>Ver Mais Videos →</strong></button><p>
+
+			<br />	
+
+<section class="NONE" id="pe_1">
+
+	<h2>Youtuber de Super Mario</h2>
+		<p class="VideoP">O Super Mario 64 foi lançado com o console Nintendo 64 e foi considerado por muitos especialistas o melhor game de todos os tempos. Pela primeira vez, o Mario recebeu uma aventura totalmente em 3 dimensões com gráficos fantásticos para a época. O jogo é muito divertido, tem muitos segredos e garante muitas horas de diversão.</p>
+		<video src="Videos/mario 64.mp4" controls class="video"></video>
+
+	<br />	
+	
+	<h2>Mario de Massinha de modelar</h2>
+		<p class="VideoP">O Super Mario Bros. é o primeiro jogo do Mario que surgiu no console NES (Nintendinho). O jogo vendeu milhões de cópias e se tornou uma lenda na história dos videogames. Foi o primeiro jogo de plataforma que ainda hoje é adorado por todo mundo por ser super divertido e simples.</p>
+		<video src="Videos/super mario bros.mp4" controls class="video"></video>
+
+	<br />	
+	
+	<h2>Luigi é Irmão do Mario?</h2>
+		<p class="VideoP">Depois do grande sucesso do Super Mario Bros, o Mario surge no console Super Nintendo em mais um game incrível. Desta vez, o Mario vem acompanhado do seu amigo Yoshi e, juntos, eles partem em uma aventura para salvar a Princesa Peach que foi (mais uma vez) raptada pelo vilão Bowser.</p>
+		<video src="Videos/super mario world.mp4" controls class="video"></video>
+
+	<br />	
+	
+	<h2>Simulador de Super Mario</h2>
+		<p class="VideoP">Este é o terceiro e último título do Super Mario do console NES. O Mario vai em busca da Princesa Peach no Reino dos Cogumelos, encarando inimigos mais perigosos. Mas, desta vez, o encanador conta com novos poderes especiais. Este é um game muito completo em que o jogador pode escolher o seu caminho no mapa.</p>
+		<video src="Videos/super mario bros 3.mp4" controls class="video"></video>
+	<section>
+
+	<br />	
+
+	<h2>Super Mario: Novidades na E3</h2>
+		<p class="VideoP">O Mario Kart regressou ao Nintendo 64 com gráficos em 3 dimensões. Você pode escolher uma personagem do universo Mario para entrar em corridas super intensas, mas muito divertidas. Pegue os itens como as bananas e os cogumelos para usar contra os seus oponentes e ganhar vantagem.</p>
+		<video src="Videos/mario kart 64.mp4" controls class="video"></video>
+
+	<br />	
+	
+	<h2>Jogo Fam Made do Super Mario</h2>
+		<p class="VideoP">Você pode construir as fases e depois jogar. Já imaginou criar a fase mais difícil de sempre? Coloque os inimigos, as plataformas e outros itens onde quiser para montar tudo do seu jeito. Use a sua imaginação para fazer fases radicais.</p>
+		<video src="Videos/mario maker.mp4" controls class="video"></video>
+
+	<br />	
+	
+	<h2>Nintendo Anuncia Mario Multiplayer</h2>
+		<p class="VideoP">Os jogos do Super Mario no NES foram tão populares que voltaram a sair no Super Nintendo. Neste game, você pode jogar o raríssimo Super Mario The Lost Levels (Super Mario Bros. 2 na versão japonesa). Também tem o Super Mario Bros. 2 na versão americana, o Super Mario Bros. 1 e 3 e o Super Mario World do Super Nintendo. </p>
+		<video src="Videos/super mario all stars.mp4" controls class="video"></video>
+	
+	</main>
+
+	<footer>
+	<img class="chao" src="imagens/rodape/chao.gif" style="width: 100%; height: 80px; border-radius: 0">
+		<address>
+			<p class= "SP"><strong> Super Mario</strong> </p>
+			<p class= "SP2"> <img src="Imagens/Icons/endereco.png" style="width: 30px"/><strong>Endereço:</strong>BR-470, Km 172, 6.500 | Bairro Sapopema | Veranópolis/RS</p>
+			<img class= "gif" src="imagens/rodape/Gif_Mario.gif">
+			<p class= "SP3"> <img src="Imagens/Icons/email.png" style="width: 30px"/><strong>Email: <a class="EML" href=mailto:"contato@papermario.com"> contato@papermario.com</a>
+			<p class= "cadastro"<strong>Efetue um Cadastro no Site:</strong></p>
+			<p class= "PB"><button class="button" type="button"><a href="Formulário.html">CADASTRAR</button></p>
+			<audio controls loop autoplay>
+				<source src="Sons/Super Mario World" type="audio/ogg"/>
+				<source src="Sons/Super Mario World.mp3" type="audio/mpeg"/>
+			</audio>
+		</address>
+	</footer>		
+</body>
+
+</html>

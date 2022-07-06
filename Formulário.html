@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="formatação/script.js"> </script>
+	<script>
+		//Chamar Função ao Executar Ação Scroll
+		window.onscroll = function() {
+			scroll();
+		}
+		//Exibit Botão Ao Rolar Scroll
+		function scroll(){
+			var btn = document.getElementById("back-to-top");
+			if(document.documentElement.scrollTop > 100){
+				btn.style.display = "block";
+			}else{
+				btn.style.display = "none";
+			}
+		}
+		//Subir ao Topo
+		function backToTop(){
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<link href="formatação/formatacao_Inicial.css" type= "text/CSS" rel="stylesheet" />
+	<meta charset="utf-8">
+	<title> Super Mario </title>
+</head>
+
+<body>	
+	<header>	
+	<img class="cabecalho" src="imagens/cabecalho/cabecalho.gif">
+		<nav style="text-align:center">
+		<ul class="li">
+			<li> <a href="inicio.html">Inicio</a></li>
+			<li> <a href="Historia.html">História</a></li>
+			<li> <a href="Novidades.html">Novidades</a></li>
+			<li> <a href="Videos.html">Videos</a></li>
+			<li> <a href="Jogos.html">Jogos</a></li>
+		</nav>
+	</header>
+	
+	<main>
+	<button onclick="backToTop()" id="back-to-top"><img src="Imagens/Icons/Subir.png" alt="Topo"/></button>
+		<h1>Newslater</h1>
+			<form class="PSubmit">
+				<p>
+					<label for="nome">Nome:</label>
+					<input type="nome" name="nome" size="30" maxlength="20" autofocus required>
+				</p>
+
+				<p>
+					<label for="nome">Telefone:</label>
+					<input type="nome" name="nome" size="30" maxlength="100" pattern="[0-9]+$" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" required>
+				</p>
+
+				<p>
+					<label for="nome">Data de nacimento:</label>
+					<input type="date" name="nome" size="30" maxlength="100" placeholder="dd/mm/aaaa" pattern="[0-9]+$" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" required>
+				</p>
+
+				<p>
+					<label for="nome">CPF:</label>
+					<input type="nome" name="nome" size="30" maxlength="100" pattern="[0-9]+$" pattern="\[0-9]{9}-[0-9]{2}$" placeholder="xxxxxxxxx-xx" required>
+				</p>
+
+				<p>
+					<label for="nome">Cidade:</label>
+					<input type="nome" name="nome" size="30" maxlength="100" list="Cidade" autocomplete="on" required>
+						<datalist id="Cidade">
+						<option value="Veranópolis">
+						<option value="Cotiporã">
+						<option value="Nova Bassano">
+						<option value="Nova Prata">
+						<option value="Fagundes Varela">
+						<option value="Nova Araça">
+					</datalist>
+					<p><input id="Check" type="checkbox">Lí e Aceito os <a class="Terms" href="Termos.html"> Termos de Serviço</a></p>
+				</p>
+			<p class="PPsubmit">
+				<input class="submit" type="submit">
+			</p>
+		</form>
+	</main>
+	
+	<footer>
+	<img class="chao" src="imagens/rodape/chao.gif" style="width: 100%; height: 80px; border-radius: 0">
+		<address>
+			<p class= "SP"><strong> Super Mario</strong> </p>
+			<p class= "SP2"> <img src="Imagens/Icons/endereco.png" style="width: 30px"/><strong>Endereço:</strong>BR-470, Km 172, 6.500 | Bairro Sapopema | Veranópolis/RS</p>
+			<img class= "gif" src="imagens/rodape/Gif_Mario.gif">
+			<p class= "SP3"> <img src="Imagens/Icons/email.png" style="width: 30px"/><strong>Email: <a class="EML" href=mailto:"contato@papermario.com"> contato@papermario.com</a>
+			<p class= "cadastro"<strong>Efetue um Cadastro no Site:</strong></p>
+			<p class= "PB"><button class="button" type="button"><a href="Formulário.html">CADASTRAR</button></p>
+			<audio controls loop autoplay>
+				<source src="Sons/Super Mario World" type="audio/ogg"/>
+				<source src="Sons/Super Mario World.mp3" type="audio/mpeg"/>
+			</audio>
+		</address>
+	</footer>
+</body>
+
+</html>
+
