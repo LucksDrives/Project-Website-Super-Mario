@@ -3,4 +3,6 @@ This is my Super Mario themed website project. It aims to deliver an informative
 
 Coding Site: https://www.youtube.com/watch?v=7PCL4BBlOuE&t=67s
 
-Demonstrating Website:
+Demonstrating Website: https://www.youtube.com/watch?v=-4Ge1GLnDm8
+
+Site: https://lucksdrives.github.io/Project-Website-Super-Mario/
